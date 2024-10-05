@@ -6,14 +6,18 @@ interface IButtonProps {
   children?: JSX.Element | string;
 }
 
-export const Button = React.forwardRef(
-  ({ children, className, onClick, type }: IButtonProps, ref) => {
+type Ref = HTMLButtonElement;
+
+export const Button = React.forwardRef<Ref, IButtonProps>(
+  ({ children, className, onClick, type }, ref) => {
     return (
       <button
         type={type}
         ref={ref}
         onClick={onClick}
-        className={`button ${className || ""}`}>
+        className={`text-white bg-orange hover:bg-yellow hover:text-orange transition-colors w-[358px] sm:w-[496px] mx-auto block py-[18px] text-[18px] rounded-[30px]  ${
+          className || ""
+        }`}>
         {children}
       </button>
     );

@@ -12,11 +12,12 @@ export default {
       blue: "#73aadd",
       darkBlue: "#304f6c",
       darkGreen: "#015f4f",
+      white: "#ffffff",
     },
     screens: {
-      sm: "391px",
-      md: "634px",
-      lg: "1024px",
+      sm: "641px",
+      md: "769px",
+      lg: "1025px",
     },
     container: {
       center: true,
@@ -32,9 +33,14 @@ export default {
     extend: {
       backgroundImage: {
         "background-home": "url('/src/assets/background/background_home.png')",
-        "future-mobile": "url('/src/assets/future/bg-mobile.png')",
-        "text-card": "url(/src/assets/creating/txt-card.png)",
-        "text-card-mobile": "url(/src/assets/creating/txt-card-mobile.png)",
+        "background-partners":
+          "url('/src/assets/background/background-partners.png')",
+        "background-partners-mobile":
+          "url('/src/assets/background/background-partners-mobile.png')",
+        "background-news": "url('/src/assets/background/background_news.png')",
+        "background-news-ivent":
+          "url('/src/assets/background/background_news_ivent.png')",
+        "background-zoo": "url('/src/assets/background/background_zoo.png')",
       },
     },
   },

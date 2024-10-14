@@ -1,4 +1,4 @@
-import { Button } from "./ui/Button";
+import { SpasiboModal } from "./SpasiboModal";
 
 export const Support = () => {
   return (
@@ -32,9 +32,7 @@ export const Support = () => {
         скачать банковские реквизиты нко <br className=" hidden sm:block" />
         «лампушка» - заповедный мир»
       </button>
-      <Button className=" mb-14 sm:mb-[100px] w-[358px] sm:w-[496px]">
-        Стать частью команды
-      </Button>
+      <SpasiboModal>Стать частью команды</SpasiboModal>
     </section>
   );
 };

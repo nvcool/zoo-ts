@@ -3,7 +3,7 @@ import telegram from "@assets/telegram.svg";
 
 export const Footer = () => {
   return (
-    <footer className="container border-t-[1px] border-darkBlue border-opacity-65 py-8 sm:py-14 text-[18px] text-center">
+    <footer className="container border-t-[1px] border-darkBlue border-opacity-65 px-4 py-8 sm:py-14 text-[18px] text-center">
       <p className=" mb-6 sm:mb-4">
         АНО ПО СОХРАНЕНИЮ ПРИРОДНЫХ И СЕМЕЙНЫХ ЦЕННОСТЕЙ ЛАМПУШКА - ЗАПОВЕДНЫЙ
         МИР.

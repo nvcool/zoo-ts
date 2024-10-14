@@ -5,7 +5,7 @@ export default {
   // Удаляет все свойства кроме написанных
   theme: {
     colors: {
-      background: "#d6e0e6",
+      background: "#E2F3FD",
       green: "#2e8a57",
       orange: "#ec6807",
       yellow: "#ffd04e",

@@ -1,8 +1,19 @@
 import { Button } from "./ui/Button";
 import flowers from "@assets/background/flowers.png";
 import vk from "@assets/vk.svg";
+import { useState } from "react";
 
 export const SubscribeForm = () => {
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault(); // предотвращает перезагрузку страницы
+    console.log("Имя:", name);
+    console.log("Email:", email);
+    // Здесь можно добавить код для отправки данных на сервер
+  };
+
   return (
     <div className="container">
       <h3 className="text-[64px] text-orange text-center mb-14">
@@ -12,21 +23,27 @@ export const SubscribeForm = () => {
         Узнавайте о наших событиях{" "}
         <strong className="font-semibold leading-[140%]">первыми</strong>
       </div>
-      <form className="grid gap-6 relative mb-8 justify-items-center">
+      <form
+        onSubmit={handleSubmit}
+        className="grid gap-6 relative mb-8 justify-items-center">
         <input
           className=" rounded-[30px] py-[22px] max-w-[496px] w-[100%] text-center"
           type="text"
           placeholder="Как вас зовут?"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
           required
         />
         <input
           className="rounded-[30px] py-[22px] max-w-[496px] w-[100%] text-center"
           type="email"
           placeholder="Ваш email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           required
         />
         <img className=" absolute bottom-0 -z-10" src={flowers} alt="" />
-        <Button type="button" className="relative ">
+        <Button type="submit" className="relative ">
           Подписаться
         </Button>
       </form>

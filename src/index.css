@@ -9,3 +9,7 @@
     @apply font-inter bg-background  text-darkBlue;
   }
 }
+
+.swiper-wrapper {
+  align-items: center;
+}

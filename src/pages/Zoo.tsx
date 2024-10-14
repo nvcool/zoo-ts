@@ -10,12 +10,12 @@ import { Support } from "@/components/Support";
 
 export const Zoo = () => {
   return (
-    <div className="sm:bg-none sm:px-0 px-4 md:bg-none lg:bg-background-zoo  bg-cover bg-no-repeat pt-[125px] sm:pt-[228px] overflow-hidden ">
+    <div className="sm:bg-none sm:px-0 px-4 md:bg-none lg:bg-background-zoo  bg-cover bg-no-repeat pt-[125px] sm:pt-[228px] overflow-hidden leading-[130%] sm:leading-[140%]">
       <section className="container mb-[100px]">
-        <h1 className="text-[64px] text-orange text-center mb-14 font-shantell">
+        <h1 className="text-2xl sm:text-[64px] text-orange text-center mb-6 sm:mb-14 font-shantell">
           Зоопарк на Лампушке
         </h1>
-        <p className="mb-4 text-[32px] font-medium leading-[140%]">
+        <p className=" mb-6 sm:mb-4 text-xl sm:text-[32px] font-medium leading-[130%] sm:leading-[140%]">
           В реликтовом сосновом бору на берегу родникового <br /> озера Лампушка
           расположен{" "}
           <strong className=" ">
@@ -25,7 +25,7 @@ export const Zoo = () => {
             России.
           </strong>
         </p>
-        <p className="mb-8 text-[32px] font-medium leading-[140%]">
+        <p className="mb-6 sm:mb-8 text-xl sm:text-[32px] leading-[130%] font-medium sm:leading-[140%]">
           В нашей коллекции <strong className="">более 400 животных</strong>,
           которые <br />
           относятся к 125 видам. Многие из наших питомцев внесены <br /> в{" "}
@@ -34,21 +34,21 @@ export const Zoo = () => {
           малого возраста. Каждый зверь имеет собственное имя и обладает
           уникальной историей.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
-          <div className="flex sm:h-full gap-8 justify-between h-[228px] overflow-hidden">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-6 sm:mb-8">
+          <div className="grid grid-cols-2 sm:grid-cols-1 sm:h-full gap-5 justify-between overflow-hidden">
             <img
-              className="rounded-[90px] w-full h-full object-cover"
+              className="rounded-[90px] h-full object-cover"
               src={lama}
               alt=""
             />
             <img
-              className="rounded-s-[160px] w-full h-full object-cover sm:hidden"
+              className=" rounded-s-[90px] sm:rounded-s-[160px]  h-full object-cover block sm:hidden"
               src={sova}
               alt=""
             />
           </div>
           <div className=" grid content-between">
-            <div className=" grid gap-6 text-[18px]">
+            <div className=" grid gap-4 sm:gap-6 text-base sm:text-lg leading-[130%] sm:leading-[140%]">
               <p>
                 В апреле 2024 года «Зоопарк на Лампушке» стал, пожалуй,{" "}
                 <strong>
@@ -73,18 +73,22 @@ export const Zoo = () => {
             />
           </div>
         </div>
-        <p className="mb-4 text-[32px] font-medium leading-[140%]">
+        <p className="mb-4 text-xl sm:text-[32px] font-medium leading-[130%] sm:leading-[140%]">
           Появление «Зоопарка на Лампушке» можно назвать <br />
           <strong>случайным</strong>, а события, которые этому предшествовали, -{" "}
           <strong>удивительными.</strong>
         </p>
-        <p className="text-[32px] font-medium leading-[140%] mb-6">
+        <p className="text-xl sm:text-[32px] font-medium lleading-[130%] sm:leading-[140%] mb-6">
           Летом 2016 года сотрудники базы отдыха «Шишки на Лампушке» обнаружили
           завязанный мешок, в котором находились два крошечных лисенка. Их мать,
           скорее всего, погибла, а малышей подкинули нам.
         </p>
-        <img className="rounded-[90px] mb-6" src={lisa} alt="" />
-        <p className="mb-4 text-[32px] font-medium leading-[140%]">
+        <img
+          className=" rounded-[30px] sm:rounded-[90px] mb-[60px] sm:mb-6 h-[198px] sm:h-full object-cover"
+          src={lisa}
+          alt=""
+        />
+        <p className="mb-4 text-xl sm:text-[32px] font-medium leading-[130%] sm:leading-[140%]">
           Выжить в дикой природе у лисят не было ни единого шанса, поэтому{" "}
           <strong>Ася и Вася</strong>, так назвали маленьких лисиц,{" "}
           <strong>
@@ -92,11 +96,11 @@ export const Zoo = () => {
           </strong>
           , когда самого зоопарка еще не было.
         </p>
-        <p className="mb-4 text-[32px] font-medium leading-[140%]">
+        <p className="mb-4 text-xl sm:text-[32px] font-medium leading-[130%] sm:leading-[140%]">
           Основатель базы отдыха «Шишки на Лампушке» и нашего зоопарка Вячеслав
           Александрович Ананских лично выкармливал подкидышей.
         </p>
-        <p className=" text-[32px] font-medium leading-[140%]">
+        <p className=" text-xl sm:text-[32px] font-medium leading-[130%] sm:leading-[140%]">
           Наши первые постояльцы росли, набирались сил, а однажды им удалось
           сбежать из вольера. Спустя несколько дней работники обнаружили
           исхудавших Асю и Васю на привычном месте – лисята вернулись к
@@ -104,8 +108,8 @@ export const Zoo = () => {
         </p>
       </section>
       <section className="container mb-[100px]">
-        <div className=" flex justify-between mb-8">
-          <div className="text-[18px] leading-[140%] w-[566px]">
+        <div className="grid sm:flex justify-between mb-8 ">
+          <div className="text-[18px] leading-[130%] sm:leading-[140%] sm:w-[566px] first:order-1 sm:first:order-2 w-full">
             <p className=" mb-6">
               Посетители нашего зоопарка могут не только{" "}
               <strong> посмотреть на экзотических зверей и птиц</strong>,
@@ -125,13 +129,21 @@ export const Zoo = () => {
               для общения с детьми в рамках социальных проектов.
             </p>
           </div>
-          <div className="flex gap-8">
-            <img className="h-[174px] rounded-[18px]" src={duck} alt="" />
-            <img className="rounded-[30px]" src={belka} alt="" />
+          <div className="flex gap-8 odd:order-1 sm:order-2">
+            <img
+              className="h-[174px] rounded-[18px] hidden sm:block"
+              src={duck}
+              alt=""
+            />
+            <img
+              className="rounded-[30px] h-auto max-h-[216px] w-full object-contain"
+              src={belka}
+              alt=""
+            />
           </div>
         </div>
         <img className="rounded-[60px] mb-14" src={huskie} alt="" />
-        <span className="text-[32px] font-medium leading-[140%]">
+        <span className="text-[32px] font-medium leading-[130%] sm:leading-[140%]">
           Наши питомцы <strong> никого не оставят равнодушными!</strong>
         </span>
       </section>
@@ -303,7 +315,7 @@ export const Zoo = () => {
         </ul>
       </section>
       <section className="container mb-[100px]">
-        <p className="text-[32px] text-center mb-14">
+        <p className="text-[32px] text-center mb-14 leading-[130%] sm:leading-[140%]">
           Мы хотим познакомить максимальное количество жителей <br /> России,
           Санкт-Петербурга и Ленинградской области <br /> с удивительным,
           загадочным и прекрасным миром дикой <br /> природы. Мы{" "}
@@ -313,7 +325,7 @@ export const Zoo = () => {
         <img className="rounded-t-[342px]" src={monkey} alt="" />
       </section>
       <section className="container mb-[100px]">
-        <div className=" text-[32px] font-medium leading-[140%] text-center bg-white py-16 rounded-[30px]">
+        <div className=" text-[32px] font-medium leading-[130%] sm:leading-[140%] text-center bg-white py-16 rounded-[30px]">
           <p>
             <span className="text-orange">Время работы зоопарка:</span>{" "}
             Ежедневно с 10:00 до 19:00
@@ -325,12 +337,12 @@ export const Zoo = () => {
         </div>
       </section>
       <section className="container mb-[100px]">
-        <h3 className="text-[64px] text-orange font-shantell mb-14">
+        <h3 className="text-[64px] text-orange font-shantell mb-14 leading-[130%] sm:leading-[140%]">
           Опека над животными
         </h3>
         <div className="flex gap-8">
           <img className="rounded-[90px]" src={rus} alt="" />
-          <div className=" grid gap-4 text-[18px] leading-[140%] h-fit">
+          <div className=" grid gap-4 text-[18px] leading-[130%] sm:leading-[140%] h-fit">
             <p>
               <strong>Любой человек или компания</strong> может стать другом
               нашего зоопарка и его обитателей. Мы всегда

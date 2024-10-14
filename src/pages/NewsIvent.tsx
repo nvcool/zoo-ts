@@ -1,3 +1,4 @@
+import { NewsIventSlider } from "@/components/NewsIventSlider";
 import { SubscribeForm } from "@/components/SubscribeForm";
 
 export const NewsIvent = () => {
@@ -31,6 +32,7 @@ export const NewsIvent = () => {
           </p>
         </div>
       </section>
+      <NewsIventSlider />
       <SubscribeForm />
     </div>
   );
